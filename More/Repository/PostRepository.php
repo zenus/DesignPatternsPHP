@@ -51,7 +51,7 @@ class PostRepository
      * Save post object and populate it with id
      *
      * @param Post $post
-     * @return Post
+     * @return int
      */
     public function save(Post $post)
     {
@@ -63,7 +63,7 @@ class PostRepository
         ));
 
         $post->setId($id);
-        return $post;
+        return $id;
     }
 
     /**
